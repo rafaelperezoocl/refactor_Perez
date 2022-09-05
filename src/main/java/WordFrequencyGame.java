@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-public class WordFrequencyGame {
 
-    public static final int INIT_COUNT = 1 ;
+public class WordFrequencyGame {
+    public static final int INIT_COUNT = 1;
     public String getResult(String inputStr){
 
 
@@ -17,19 +17,13 @@ public class WordFrequencyGame {
             try {
 
                 //split the input string with 1 to n pieces of spaces
-                private static List<Input> convertToWordFrequencyList(String inputStr){
-               String[] inputWords = splitInput(inputStr);
+                String[] arr = inputStr.split("\\s+");
 
-             List<Input> inputList = new ArrayList<>();
-              for (String s : inputWords) {
-                 Input input = new Input(s, 1);
-                  inputList.add(input);
-         }
-      return inputListl;
-                    return convertToWordFrequencyList;
-
-                    private static List<Input> convertToWordFrequencyListTemp(String inputStr){}
-
+                List<Input> inputList = new ArrayList<>();
+                for (String s : arr) {
+                    Input input = new Input(s, 1);
+                    inputList.add(input);
+                }
 
                 //get the map for the next step of sizing the same word
                 Map<String, List<Input>> map =getListMap(inputList);
