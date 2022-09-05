@@ -18,14 +18,14 @@ public class WordFrequencyGame {
 
                 //split the input string with 1 to n pieces of spaces
                 private static List<Input> convertToWordFrequencyList(String inputStr){
-//                String[] inputWords = splitInput(inputStr);
-//
-//                List<Input> inputList = new ArrayList<>();
-//                for (String s : inputWords) {
-//                    Input input = new Input(s, 1);
-//                    inputList.add(input);
-//                }
-   //             return inputListl;
+               String[] inputWords = splitInput(inputStr);
+
+             List<Input> inputList = new ArrayList<>();
+              for (String s : inputWords) {
+                 Input input = new Input(s, 1);
+                  inputList.add(input);
+         }
+      return inputListl;
                     return convertToWordFrequencyList;
 
                     private static List<Input> convertToWordFrequencyListTemp(String inputStr){}
